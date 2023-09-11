@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "title": "Mastering Python: From Beginner to Expert",
+      "cover_img": "https://images.pexels.com/photos/4385547/pexels-photo-4385547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "author": "John Doe",
+      "author_img": "https://img.freepik.com/premium-photo/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.jpg",
+      "publish_date": "2023-08-15",
+      "read_time": 4,
+      "hashtags": ["python", "programming", "beginner", "expert"]
+    },
+    {
+      "id": 2,
+      "title": "Web Development with HTML, CSS, and JavaScript",
+      "cover_img": "https://img.freepik.com/premium-photo/top-view-hands-working-laptop-with-copy-space-coffee_23-2148397876.jpg?w=900",
+      "author": "Jane Smith",
+      "author_img": "https://img.freepik.com/free-photo/young-woman-with-round-glasses-yellow-sweater_273609-7091.jpg?w=740&t=st=1694449236~exp=1694449836~hmac=803eec16fcf4d1fa5a723329e7d94ee2122a6eac23918f96f942f5a0f2450ee3",
+      "publish_date": "2023-09-01",
+      "read_time": 3.5,
+      "hashtags": ["webdev", "html", "css", "javascript"]
+    },
+    {
+      "id": 3,
+      "title": "Data Structures and Algorithms in C++",
+      "cover_img": "https://img.freepik.com/free-vector/gradient-bim-horizontal-banner_23-2150244627.jpg?w=826&t=st=1694449093~exp=1694449693~hmac=b9ec1d82556aa09f629dfce5db12eab65ce0d3b57445cd4d9fb460c41799d159",
+      "author": "Sam Johnson",
+      "author_img": "https://img.freepik.com/free-photo/middle-aged-cheerful-dark-skinned-male-with-shining-smile_273609-28538.jpg?t=st=1694449197~exp=1694449797~hmac=ab0faf3d502be90df7356590d6ff36c4c3862db457d928b45469c73163cd0575",
+      "publish_date": "2023-08-25",
+      "read_time": 5,
+      "hashtags": ["c++", "datastructures", "algorithms"]
+    },
+    {
+      "id": 4,
+      "title": "Machine Learning Basics: A Practical Guide",
+      "cover_img": "https://img.freepik.com/premium-photo/concept-web-development-sites-internet-pages-global-network_102583-4892.jpg?w=740",
+      "author": "Alex Rodriguez",
+      "author_img": "https://img.freepik.com/free-photo/portrait-man-laughing_23-2148859448.jpg?w=740&t=st=1694449309~exp=1694449909~hmac=2a1318f3940d071011352eb51eabc2dbaacc09ef32027b437cdbb2869d079c83",
+      "publish_date": "2023-09-05",
+      "read_time": 6,
+      "hashtags": ["machinelearning", "basics", "practical"]
+    },
+    {
+      "id": 5,
+      "title": "Building Scalable APIs with Node.js and Express",
+      "cover_img": "https://img.freepik.com/premium-photo/programming-languages-tech-purple-background-with-code-elements-lines-light_272306-166.jpg?w=900",
+      "author": "Emily Brown",
+      "author_img": "https://img.freepik.com/free-photo/cheerful-curly-business-girl-wearing-glasses_176420-206.jpg?w=740&t=st=1694449347~exp=1694449947~hmac=fb36526dd0ba9d7463c64ae5e637b60f5c8d72c3835345d4af859cc33b2400d3",
+      "publish_date": "2023-08-30",
+      "read_time": 4.5,
+      "hashtags": ["nodejs", "express", "api", "scalability"]
+    }
+  ]
+  

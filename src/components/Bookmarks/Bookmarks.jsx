@@ -4,6 +4,11 @@ import Bookmark from "../Bookmark/Bookmark";
 const Bookmarks = ({ bookmarks }) => {
   return (
     <div>
+        {/*totla reading time */}
+        <div>
+            <h1>reading time</h1>
+        </div>
+        {/* bookmarks */}
       <div className="bg-slate-200 p-6 rounded-lg">
         <h1 className="font-bold text-xl">
           Bookmarked Blogs: {bookmarks.length}
@@ -19,7 +24,7 @@ const Bookmarks = ({ bookmarks }) => {
 };
 
 Bookmarks.propTypes = {
-  bookmarks: PropTypes.object,
+  bookmarks: PropTypes.array.isRequired,
 };
 
 export default Bookmarks;

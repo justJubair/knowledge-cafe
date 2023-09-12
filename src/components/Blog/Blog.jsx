@@ -1,8 +1,10 @@
 import PropTypes from "prop-types";
+import { useState } from "react";
 
 import { BsBookmarkCheck } from "react-icons/bs";
 
 const Blog = ({ blog, handleBookmark, handleMarkRead }) => {
+  const [bookmarkClick, setBookmarkClick] = useState(false);
   const {
     title,
     cover_img,
@@ -12,6 +14,13 @@ const Blog = ({ blog, handleBookmark, handleMarkRead }) => {
     read_time,
     hashtags,
   } = blog;
+  const handleChangeBookmarkColor=()=>{
+    setBookmarkClick(!bookmarkClick)
+  }
+  const fatherHandleBookmark =()=>{
+    handleBookmark(blog)
+    handleChangeBookmarkColor()
+  }
   return (
     <div className="space-y-3 mb-14 border-b-2 pb-4">
       <img className="mb-6" src={cover_img} alt="" />
@@ -29,7 +38,7 @@ const Blog = ({ blog, handleBookmark, handleMarkRead }) => {
         <div className="flex items-center gap-2">
           <small className="text-slate-600">{read_time} min read</small>
           {/* bookmark button */}
-          <button onClick={()=> handleBookmark(blog)} className="text-xl text-slate-600">
+          <button onClick={fatherHandleBookmark} className="text-xl" style={{color: bookmarkClick ? 'green' : 'red'}}>
             <BsBookmarkCheck />
           </button>
         </div>

@@ -1,12 +1,13 @@
 import PropTypes from "prop-types";
 import Bookmark from "../Bookmark/Bookmark";
+import ReadingTime from "../ReadingTime/ReadingTime";
 
-const Bookmarks = ({ bookmarks }) => {
+const Bookmarks = ({ bookmarks, readingTime }) => {
   return (
     <div>
         {/*totla reading time */}
-        <div>
-            <h1>reading time</h1>
+        <div className="border-2 text-center border-violet-400 p-4 bg-violet-100 mb-4">
+            <ReadingTime readingTime={readingTime}/>
         </div>
         {/* bookmarks */}
       <div className="bg-slate-200 p-6 rounded-lg">
@@ -25,6 +26,7 @@ const Bookmarks = ({ bookmarks }) => {
 
 Bookmarks.propTypes = {
   bookmarks: PropTypes.array.isRequired,
+  readingTime: PropTypes.number.isRequired
 };
 
 export default Bookmarks;

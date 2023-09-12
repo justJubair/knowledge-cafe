@@ -5,13 +5,17 @@ import Header from "./components/Header/Header";
 
 function App() {
   const [bookmarks,setBookmarks] = useState([])
+  const [readingTime, setReadingTime] = useState(0);
 
   const handleBookmark = blog=>{
     const updatedBookmarks = [...bookmarks, blog];
     setBookmarks(updatedBookmarks);
   }
   const handleMarkRead = blog=>{
-      console.log(blog.read_time)
+      const updatedReadingTime = readingTime + blog.read_time
+      setReadingTime(updatedReadingTime)
+      const newBookmark = bookmarks.filter(bookmark=>blog.id !== bookmark.id)
+      setBookmarks(newBookmark)
   }
   return (
     <div className="max-w-screen-lg mx-auto">
@@ -21,7 +25,7 @@ function App() {
           <Blogs handleBookmark={handleBookmark} handleMarkRead={handleMarkRead} />
         </div>
         <div className="1/3">
-          <Bookmarks bookmarks={bookmarks}/>
+          <Bookmarks readingTime={readingTime} bookmarks={bookmarks}/>
         </div>
       </div>
     </div>

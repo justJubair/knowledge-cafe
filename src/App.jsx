@@ -14,8 +14,9 @@ function App() {
   const handleMarkRead = blog=>{
       const updatedReadingTime = readingTime + blog.read_time
       setReadingTime(updatedReadingTime)
-      const newBookmark = bookmarks.filter(bookmark=>blog.id !== bookmark.id)
-      setBookmarks(newBookmark)
+      // remove bookmarks from bookmark list
+      const remainingBookmark = bookmarks.filter(bookmark=>blog.id !== bookmark.id)
+      setBookmarks(remainingBookmark)
   }
   return (
     <div className="max-w-screen-lg mx-auto">
